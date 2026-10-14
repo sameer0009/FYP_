@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="50%" stop-color="#F5E080"/>
+      <stop offset="100%" stop-color="#AA820A"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E2A47"/>
+      <stop offset="100%" stop-color="#1A365D"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Dark Ring -->
+  <circle cx="200" cy="200" r="190" fill="none" stroke="#0E2A47" stroke-width="4"/>
+  <circle cx="200" cy="200" r="182" fill="#FFFFFF" stroke="#0E2A47" stroke-width="2"/>
+
+  <!-- Outer Text Circular Path -->
+  <path id="textPathTop" fill="none" stroke="none" d="M 60,200 A 140,140 0 1,1 340,200"/>
+  <path id="textPathBottom" fill="none" stroke="none" d="M 340,200 A 140,140 0 1,1 60,200"/>
+
+  <text font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-weight="700" font-size="20" fill="#0E2A47" letter-spacing="4">
+    <textPath href="#textPathTop" startOffset="50%" text-anchor="middle">
+      RIPHAH SCHOOL OF
+    </textPath>
+  </text>
+
+  <text font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-weight="700" font-size="16" fill="#0E2A47" letter-spacing="3.5">
+    <textPath href="#textPathBottom" startOffset="50%" text-anchor="middle">
+      COMPUTING &amp; INNOVATION
+    </textPath>
+  </text>
+
+  <!-- Academic Cap Icons on Sides -->
+  <g transform="translate(42, 190) scale(0.65)" fill="#0E2A47">
+    <polygon points="15,0 0,8 15,16 30,8"/>
+    <path d="M 7,13 L 7,22 Q 15,26 23,22 L 23,13 Q 15,17 7,13 Z"/>
+    <line x1="3" y1="9" x2="3" y2="24" stroke="#0E2A47" stroke-width="2"/>
+    <circle cx="3" cy="24" r="2"/>
+  </g>
+
+  <g transform="translate(338, 190) scale(0.65)" fill="#0E2A47">
+    <polygon points="15,0 0,8 15,16 30,8"/>
+    <path d="M 7,13 L 7,22 Q 15,26 23,22 L 23,13 Q 15,17 7,13 Z"/>
+    <line x1="3" y1="9" x2="3" y2="24" stroke="#0E2A47" stroke-width="2"/>
+    <circle cx="3" cy="24" r="2"/>
+  </g>
+
+  <!-- Inner Blue Crest Circle -->
+  <circle cx="200" cy="200" r="116" fill="url(#blueGrad)" stroke="url(#goldGrad)" stroke-width="5" filter="url(#shadow)"/>
+  <circle cx="200" cy="200" r="112" fill="none" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1.5"/>
+
+  <!-- Arch Gateway (Mihrab/Arch) -->
+  <path d="M 148,250 L 148,185 C 148,150 170,125 200,125 C 230,125 252,150 252,185 L 252,250" 
+        fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Traditional Islamic Knot / Feather / Calligraphy motif inside -->
+  <g transform="translate(200, 185) scale(0.85)" stroke="url(#goldGrad)" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Center Quill / Open Book / Dove Motif -->
+    <path d="M 0,-45 C -15,-20 -20,0 0,25 C 20,0 15,-20 0,-45 Z" fill="#D4AF37" fill-opacity="0.2"/>
+    <path d="M 0,-45 L 0,35"/>
+    <path d="M -25,10 Q 0,25 25,10"/>
+    <path d="M -35,30 Q 0,55 35,30"/>
+    <circle cx="0" cy="-45" r="4" fill="url(#goldGrad)"/>
+    <path d="M -15,-30 C -25,-15 -10,0 0,-10 C 10,0 25,-15 15,-30"/>
+  </g>
+
+  <!-- Arabic Calligraphic Representation -->
+  <path d="M 160,230 Q 180,245 200,232 Q 220,245 240,230" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 168,242 Q 185,252 200,244 Q 215,252 232,242" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
