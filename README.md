@@ -1,4 +1,6 @@
 # RSCI Final Year Project (FYP) Management Portal
+<img width="1600" height="1600" alt="fyp-portal-launch-square" src="https://github.com/user-attachments/assets/c3adf01d-b4c2-4dd6-b41f-7d93d6d5eb69" />
+
 
 Enterprise-grade, centralized web application for managing the complete Final Year Project lifecycle at the **Riphah School of Computing & Innovation (RSCI)**.
 
